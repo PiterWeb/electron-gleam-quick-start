@@ -5,3 +5,6 @@
  * `contextIsolation` is turned on. Use the contextBridge API in `preload.js`
  * to expose Node.js functionality from the main process.
  */
+import { renderer } from "./src_gleam/build/dev/javascript/main/renderer.mjs";
+
+renderer()

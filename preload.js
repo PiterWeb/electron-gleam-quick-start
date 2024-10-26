@@ -6,7 +6,12 @@
  *
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
+import { preload } from "./src_gleam/build/dev/javascript/main/preload.mjs";
+
+preload()
+
 window.addEventListener('DOMContentLoaded', () => {
+
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
     if (element) element.innerText = text

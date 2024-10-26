@@ -1,24 +1,11 @@
-# src
+# Gleam code
 
-[![Package Version](https://img.shields.io/hexpm/v/src)](https://hex.pm/packages/src)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/src/)
+## Do not run gleam build or gleam run
 
-```sh
-gleam add src@1
-```
-```gleam
-import src
+The way the project works you will need to positionate on the root folder of the project and use the npm/pnpm commands:
 
-pub fn main() {
-  // TODO: An example of the project in use
-}
-```
+      // Dev (equivalent to gleam run)
+      $ pnpm start 
 
-Further documentation can be found at <https://hexdocs.pm/src>.
-
-## Development
-
-```sh
-gleam run   # Run the project
-gleam test  # Run the tests
-```
+      // Build (equivalent to gleam build -target javascript)
+      $ pnpm build

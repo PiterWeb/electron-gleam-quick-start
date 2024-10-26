@@ -5,7 +5,8 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "electron ."
+    "move_wrapper": "",
+    "start": "node ./scripts/build_gleam.js & node ./scripts/move_wrapper.js & electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [

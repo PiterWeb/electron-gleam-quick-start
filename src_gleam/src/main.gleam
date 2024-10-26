@@ -79,9 +79,7 @@ fn create_window() {
       height: option.Some(1080),
       title: option.Some("Hello"),
       web_preferences: option.Some(BrowserWindowWebPreferences(
-        preload: option.Some(
-          "D:/Programacion/Gleam/electron-gleam-quick-start/preload.js",
-        ),
+        preload: option.None,
         accessible_title: option.None,
         additional_arguments: option.None,
         allow_running_insecure_content: option.None,

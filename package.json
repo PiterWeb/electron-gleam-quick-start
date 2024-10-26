@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "move_wrapper": "",
-    "start": "node ./scripts/build_gleam.js & node ./scripts/move_wrapper.js & electron ."
+    "start": "node ./scripts/build_gleam.js & node ./scripts/move_wrapper.js & electron .",
+    "build": "node ./scripts/build_gleam.js & node ./scripts/move_wrapper.js & electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -16,9 +17,23 @@
     "tutorial",
     "demo"
   ],
+  "build": {
+    "appId": "com.example.app",
+    "files": [
+      "main.js",
+      "renderer.js",
+      "index.html",
+      "styles.css",
+      "./src_gleam/build/dev/javascript/**/*"
+    ],
+    "directories": {
+      "output": "build"
+    }
+  },
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^33.0.2"
+    "electron": "^33.0.2",
+    "electron-builder": "^25.1.8"
   }
 }

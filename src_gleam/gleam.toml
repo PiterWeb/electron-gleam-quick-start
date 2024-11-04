@@ -23,4 +23,4 @@ gleeunit = ">= 1.0.0 and < 2.0.0"
 
 [javascript]
 runtime = "node"
-typescript_declarations = true
+typescript_declarations = false # Set to true if you want to generate TypeScript declarations

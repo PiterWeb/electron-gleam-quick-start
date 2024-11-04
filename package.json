@@ -5,7 +5,6 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "move_wrapper": "",
     "start": "node ./scripts/build_gleam.js & node ./scripts/move_wrapper.js & electron .",
     "build": "node ./scripts/build_gleam.js & node ./scripts/move_wrapper.js & electron-builder"
   },

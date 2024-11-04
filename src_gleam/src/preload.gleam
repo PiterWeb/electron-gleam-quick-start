@@ -1,3 +1,4 @@
+import gleam/io
 import gleam/list
 import plinth/browser/document
 import plinth/browser/element
@@ -10,6 +11,7 @@ pub fn preload() {
     })
   })
 
+  io.println("Hello from Preload")
   document.set_title("Gleam Electron App")
 }
 

@@ -1,5 +1,6 @@
 import gleam/io
 import gleam/option.{type Option}
+import utils/path
 
 @external(javascript, "./js_wrapper/electron.js", "getBrowserWindow")
 fn get_browser_window(options: BrowserWindowOptions) -> BrowserWindow
@@ -79,7 +80,7 @@ fn create_window() {
       height: option.Some(1080),
       title: option.Some("Hello"),
       web_preferences: option.Some(BrowserWindowWebPreferences(
-        preload: option.None,
+        preload: option.Some(path.to_absolute_path("./preload.js")),
         accessible_title: option.None,
         additional_arguments: option.None,
         allow_running_insecure_content: option.None,

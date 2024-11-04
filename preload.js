@@ -6,6 +6,10 @@
  *
  * https://www.electronjs.org/docs/latest/tutorial/sandbox
  */
-import { preload } from "./src_gleam/build/dev/javascript/main/preload.mjs";
 
-preload()
+async function preload() {
+    const module = await import('./src_gleam/build/dev/javascript/main/preload.mjs');
+    module.preload();
+  }
+  
+preload();

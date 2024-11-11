@@ -43,6 +43,10 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 - [tour.gleam.run](https://tour.gleam.run/) - Gleam interactive tour
 - [gleam.run/documentation](https://gleam.run/documentation/) - all of Gleam documentation
 
+## Used Gleam dependencies
+
+- [plinth](https://github.com/CrowdHailer/plinth)
+
 ## License
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
